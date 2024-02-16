@@ -1,0 +1,4 @@
+(executable
+ (public_name simple_adder)
+ (name main)
+ (libraries simple_adder))
