@@ -1,4 +1,4 @@
 (executable
- (public_name simple_adder)
+ (public_name simple_circuits)
  (name main)
- (libraries simple_adder))
+ (libraries simple_circuits))

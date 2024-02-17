@@ -1,5 +1,5 @@
 (library
- (name simple_adder)
+ (name simple_circuits)
  (libraries base hardcaml)
  (preprocess
   (pps ppx_jane)))

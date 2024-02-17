@@ -1,23 +1,21 @@
 (lang dune 3.14)
 
-(name simple_adder)
+(name simple_circuits)
 
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github benoitlx/simple-circuits))
 
-(authors "Author Name")
-
-(maintainers "Maintainer Name")
+(authors "Benoit Leroux")
 
 (license LICENSE)
 
 (documentation https://url/to/documentation)
 
 (package
- (name simple_adder)
- (synopsis "A short synopsis")
+ (name simple_circuits)
+ (synopsis "Hardware description of simple circuits")
  (description "A longer description")
  (depends ocaml dune)
  (tags

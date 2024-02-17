@@ -2,11 +2,11 @@
 open Hardcaml.Signal
 
 let adder a b = a +: b
-let c = output "c" (adder (input "ina" 7) (input "inb" 8))
+let c = output "c" (adder (input "ina" 8) (input "inb" 8))
 let circuit = Hardcaml.Circuit.create_exn ~name:"my_first_adder" [ c ];;
 
 Stdio.printf "Verilog begin\n";;
-Hardcaml.Rtl.print Verilog circuit;;
+Hardcaml.Rtl.print Vhdl circuit;;
 Stdio.printf "Verilog end\n"
 
 let sim = Hardcaml.Cyclesim.create circuit
