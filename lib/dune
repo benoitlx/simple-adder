@@ -1,2 +1,5 @@
 (library
- (name simple_adder))
+ (name simple_adder)
+ (libraries base hardcaml)
+ (preprocess
+  (pps ppx_jane)))
