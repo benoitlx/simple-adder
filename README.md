@@ -1,2 +1,2 @@
-# simple-adder
-Hardware Description of a simple adder using Hardcaml
+# simple-circuits
+Hardware Description of simple circuits using Hardcaml
