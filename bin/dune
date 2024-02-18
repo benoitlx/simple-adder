@@ -1,4 +1,8 @@
 (executable
- (public_name simple_circuits)
+ (public_name main)
  (name main)
  (libraries simple_circuits))
+
+; how to use:
+; build using `dune build`
+; run with `dune exec main`

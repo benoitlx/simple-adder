@@ -9,14 +9,14 @@
 
 (authors "Benoit Leroux")
 
-(license LICENSE)
+; (license LICENSE)
 
-(documentation https://url/to/documentation)
+; (documentation https://url/to/documentation)
 
 (package
  (name simple_circuits)
  (synopsis "Hardware description of simple circuits")
- (description "A longer description")
+ ; (description "A longer description")
  (depends ocaml dune)
  (tags
   (topics "to describe" your project)))
