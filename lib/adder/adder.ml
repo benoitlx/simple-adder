@@ -1,4 +1,3 @@
-open Hardcaml
 open Hardcaml.Signal
 
 (** type t means Signal type in the following program **)
@@ -35,7 +34,6 @@ let adder ({in_a; in_b; carry_in}: t I.t) : t O.t =
     s::acc, c) ([], carry_in) (bits_msb in_a) (bits_msb in_b) in
   {out=concat_msb out; carry_out=cout}
 
-(* let adder_circuit = Hardcaml.Circuit.create_exn ~name:"adder" [ adder ] *)
-
-  
-  
+let adder_circuit = 
+  let open Hardcaml.Circuit in
+  create_with_interface (module I) (module O) ~name:"adder" adder 
