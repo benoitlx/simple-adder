@@ -24,4 +24,6 @@ end
 (** define the adder function **)
 val adder : t I.t -> t O.t
 (** define the circuit **)
-val adder_circuit : Circuit.t
+val circuit : Circuit.t
+(** define the testbench **)
+val testbench : (t I.t -> t O.t) -> unit

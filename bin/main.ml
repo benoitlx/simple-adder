@@ -10,6 +10,11 @@
 open Hardcaml
 open Simplecircuits
 
+let rtl_generation () : unit =
+  let output_mode = Rtl.Output_mode.To_file("vhdl/adder.vhdl") in
+  Rtl.output ~output_mode Vhdl Adder.circuit
+
+
 let () =
-  let output_mode = Rtl.Output_mode.To_file("verilog/adder.v") in
-  Rtl.output ~output_mode Verilog Adder.adder_circuit 
+  Adder.testbench Adder.adder;
+  rtl_generation ()
