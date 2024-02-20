@@ -11,9 +11,8 @@ open Hardcaml
 open Simplecircuits
 
 let rtl_generation () : unit =
-  let output_mode = Rtl.Output_mode.To_file("vhdl/adder.vhdl") in
+  let output_mode = Rtl.Output_mode.To_file "vhdl/adder.vhdl" in
   Rtl.output ~output_mode Vhdl Adder.circuit
-
 
 let () =
   Adder.testbench Adder.adder;
